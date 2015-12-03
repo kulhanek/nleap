@@ -1,0 +1,14 @@
+Chnages to sleap from AmberTools v1.4
+--------------------------------------
+
+- all graphics removed
+- all python stuff removed
+- introduced new subgroup clilib
+- class leaplog_t removed, all output is redirected to a given leap context output stream
+- class control_t removed, its functionality is moved to command_i and context_t
+- console_t rewritten, part of its functionality goes to context_t
+
+- command_i
+        - changed prototype of info method, it now provides short and long description
+        - undo method removed
+        - exec methods has a new parameter, which is a leap context
