@@ -17,6 +17,7 @@ ENDIF(UNIX)
 
 # final build ------------------------------------------------------------------
 ADD_EXECUTABLE(nleap-cli ${NLEAP_SRC})
+ADD_DEPENDENCIES(nleap-cli nleapcmds_shared nleap_shared)
 
 TARGET_LINK_LIBRARIES(nleap-cli
                 nleapcmds_shared

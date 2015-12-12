@@ -89,6 +89,7 @@ SET(NLEAP_CMDS_SOURCE
         )
 
 ADD_LIBRARY(nleapcmds_shared SHARED ${NLEAP_CMDS_SOURCE})
+ADD_DEPENDENCIES(nleapcmds_shared nleap_shared)
 
 SET_TARGET_PROPERTIES(nleapcmds_shared PROPERTIES
                         OUTPUT_NAME nleapcmds
